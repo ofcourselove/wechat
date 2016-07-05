@@ -1,0 +1,10 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+APPID	D:\xampp\htdocs\wechat\index.php	/^define("APPID","wx9df2725cc2dd130f");$/;"	define	line:2
+APPSECRET	D:\xampp\htdocs\wechat\index.php	/^define("APPSECRET","351c264296853b8b1a23f92017e9af59");$/;"	define	line:3
+TOKEN	D:\xampp\htdocs\wechat\index.php	/^define("TOKEN","weixin11");$/;"	define	line:4
+wechat	D:\xampp\htdocs\wechat\index.php	/^$wechat = new WeChat(APPID,APPSECRET,TOKEN);$/;"	variable	line:7

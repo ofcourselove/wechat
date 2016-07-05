@@ -1,0 +1,96 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+TOKEN	D:\xampp\htdocs\wechat\inde.php	/^define("TOKEN", "weixin11");$/;"	define	line:8
+wechatObj	D:\xampp\htdocs\wechat\inde.php	/^$wechatObj = new wechatCallbackapiTest();$/;"	variable	line:9
+wechatCallbackapiTest	D:\xampp\htdocs\wechat\inde.php	/^class wechatCallbackapiTest$/;"	class	line:12
+valid	D:\xampp\htdocs\wechat\inde.php	/^	public function valid()$/;"	function	line:14
+echoStr	D:\xampp\htdocs\wechat\inde.php	/^        $echoStr = $_GET["echostr"];$/;"	variable	line:16
+responseMsg	D:\xampp\htdocs\wechat\inde.php	/^    public function responseMsg()$/;"	function	line:25
+postStr	D:\xampp\htdocs\wechat\inde.php	/^		$postStr = $GLOBALS["HTTP_RAW_POST_DATA"];$/;"	variable	line:28
+postObj	D:\xampp\htdocs\wechat\inde.php	/^              	$postObj = simplexml_load_string($postStr, 'SimpleXMLElement', LIBXML_NOCDATA);$/;"	variable	line:33
+fromUsername	D:\xampp\htdocs\wechat\inde.php	/^                $fromUsername = $postObj->FromUserName;$/;"	variable	line:34
+toUsername	D:\xampp\htdocs\wechat\inde.php	/^                $toUsername = $postObj->ToUserName;$/;"	variable	line:35
+keyword	D:\xampp\htdocs\wechat\inde.php	/^                $keyword = trim($postObj->Content);$/;"	variable	line:36
+time	D:\xampp\htdocs\wechat\inde.php	/^                $time = time();$/;"	variable	line:37
+textTpl	D:\xampp\htdocs\wechat\inde.php	/^                $textTpl = "<xml>$/;"	variable	line:38
+msgType	D:\xampp\htdocs\wechat\inde.php	/^              		$msgType = "text";$/;"	variable	line:48
+contentStr	D:\xampp\htdocs\wechat\inde.php	/^                	$contentStr = "Welcome to wechat world!";$/;"	variable	line:49
+resultStr	D:\xampp\htdocs\wechat\inde.php	/^                	$resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);$/;"	variable	line:50
+checkSignature	D:\xampp\htdocs\wechat\inde.php	/^	private function checkSignature()$/;"	function	line:62
+signature	D:\xampp\htdocs\wechat\inde.php	/^        $signature = $_GET["signature"];$/;"	variable	line:64
+timestamp	D:\xampp\htdocs\wechat\inde.php	/^        $timestamp = $_GET["timestamp"];$/;"	variable	line:65
+nonce	D:\xampp\htdocs\wechat\inde.php	/^        $nonce = $_GET["nonce"];$/;"	variable	line:66
+token	D:\xampp\htdocs\wechat\inde.php	/^		$token = TOKEN;$/;"	variable	line:67
+tmpArr	D:\xampp\htdocs\wechat\inde.php	/^		$tmpArr = array($token, $timestamp, $nonce);$/;"	variable	line:68
+tmpStr	D:\xampp\htdocs\wechat\inde.php	/^		$tmpStr = implode( $tmpArr );$/;"	variable	line:70
+tmpStr	D:\xampp\htdocs\wechat\inde.php	/^		$tmpStr = sha1( $tmpStr );$/;"	variable	line:71
+tmpStr	D:\xampp\htdocs\wechat\inde.php	/^		if( $tmpStr == $signature ){$/;"	variable	line:73
+APPID	D:\xampp\htdocs\wechat\index.php	/^define("APPID","wx9df2725cc2dd130f");$/;"	define	line:2
+APPSECRET	D:\xampp\htdocs\wechat\index.php	/^define("APPSECRET","351c264296853b8b1a23f92017e9af59");$/;"	define	line:3
+TOKEN	D:\xampp\htdocs\wechat\index.php	/^define("TOKEN","weixin11");$/;"	define	line:4
+wechat	D:\xampp\htdocs\wechat\index.php	/^$wechat = new WeChat(APPID,APPSECRET,TOKEN);$/;"	variable	line:7
+WeChat	D:\xampp\htdocs\wechat\wechat.inc.php	/^class WeChat{$/;"	class	line:3
+_appid	D:\xampp\htdocs\wechat\wechat.inc.php	/^	private $_appid;$/;"	variable	line:4
+_appsecret	D:\xampp\htdocs\wechat\wechat.inc.php	/^	private $_appsecret;$/;"	variable	line:5
+_token	D:\xampp\htdocs\wechat\wechat.inc.php	/^	private $_token;$/;"	variable	line:6
+__construct	D:\xampp\htdocs\wechat\wechat.inc.php	/^	public function __construct($appid,$appsecret,$token){$/;"	function	line:8
+_appid	D:\xampp\htdocs\wechat\wechat.inc.php	/^		$this->_appid = $appid;$/;"	variable	line:9
+_appsecret	D:\xampp\htdocs\wechat\wechat.inc.php	/^		$this->_appsecret = $appsecret;$/;"	variable	line:10
+_token	D:\xampp\htdocs\wechat\wechat.inc.php	/^		$this->_token = $token;$/;"	variable	line:11
+_request	D:\xampp\htdocs\wechat\wechat.inc.php	/^	private function _request($curl, $https=true, $method='get', $data=null){$/;"	function	line:21
+https	D:\xampp\htdocs\wechat\wechat.inc.php	/^	private function _request($curl, $https=true, $method='get', $data=null){$/;"	variable	line:21
+ch	D:\xampp\htdocs\wechat\wechat.inc.php	/^		$ch = curl_init();\/\/初始化$/;"	variable	line:22
+str	D:\xampp\htdocs\wechat\wechat.inc.php	/^		$str = curl_exec($ch);\/\/执行访问，返回结果$/;"	variable	line:34
+_getAccesstoken	D:\xampp\htdocs\wechat\wechat.inc.php	/^	private function _getAccesstoken(){$/;"	function	line:42
+file	D:\xampp\htdocs\wechat\wechat.inc.php	/^		$file = '.\/accesstoken'; \/\/用于保存access token$/;"	variable	line:43
+content	D:\xampp\htdocs\wechat\wechat.inc.php	/^			$content = file_get_contents($file); \/\/获取文件内容$/;"	variable	line:45
+content	D:\xampp\htdocs\wechat\wechat.inc.php	/^			$content = json_decode($content);\/\/json解码$/;"	variable	line:46
+content	D:\xampp\htdocs\wechat\wechat.inc.php	/^		$content = $this->_request("https:\/\/api.weixin.qq.com\/cgi-bin\/token?grant_type=client_credential&appid=".$this->_appid."&secret=".$this->_appsecret); \/\/获取access token的json对象$/;"	variable	line:50
+content	D:\xampp\htdocs\wechat\wechat.inc.php	/^		$content = json_decode($content);\/\/进行json解码$/;"	variable	line:52
+_getTicket	D:\xampp\htdocs\wechat\wechat.inc.php	/^	public function _getTicket($expires_secords = 604800, $type = "temp", $scene = 1){$/;"	function	line:62
+type	D:\xampp\htdocs\wechat\wechat.inc.php	/^	public function _getTicket($expires_secords = 604800, $type = "temp", $scene = 1){$/;"	variable	line:62
+data	D:\xampp\htdocs\wechat\wechat.inc.php	/^			 $data = '{"expire_seconds":'.$expires_secords.', "action_name": "QR_SCENE", "action_info": {"scene": {"scene_id": '.$scene.'}}}';\/\/临时二维码生成所需提交数据$/;"	variable	line:64
+data	D:\xampp\htdocs\wechat\wechat.inc.php	/^			 $data = '{"action_name": "QR_LIMIT_SCENE", "action_info": {"scene": {"scene_id": '.$scene.'}}}';\/\/永久二维码生成所需提交数据$/;"	variable	line:67
+_getQRCode	D:\xampp\htdocs\wechat\wechat.inc.php	/^	public function _getQRCode($expires_secords,$type,$scene){$/;"	function	line:78
+content	D:\xampp\htdocs\wechat\wechat.inc.php	/^		$content = json_decode($this->_getTicket($expires_secords,$type,$scene));\/\/发出请求并获得ticket的json对象$/;"	variable	line:79
+ticket	D:\xampp\htdocs\wechat\wechat.inc.php	/^		$ticket = $content->ticket;\/\/获取ticket$/;"	variable	line:80
+image	D:\xampp\htdocs\wechat\wechat.inc.php	/^		$image = $this->_request("https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=".urlencode($ticket)$/;"	variable	line:81
+valid	D:\xampp\htdocs\wechat\wechat.inc.php	/^	public function valid()\/\/检查安全性$/;"	function	line:87
+echoStr	D:\xampp\htdocs\wechat\wechat.inc.php	/^        $echoStr = $_GET["echostr"];$/;"	variable	line:89
+responseMsg	D:\xampp\htdocs\wechat\wechat.inc.php	/^    public function responseMsg()$/;"	function	line:98
+postStr	D:\xampp\htdocs\wechat\wechat.inc.php	/^		$postStr = $GLOBALS["HTTP_RAW_POST_DATA"];\/\/获得用户发送信息$/;"	variable	line:101
+postObj	D:\xampp\htdocs\wechat\wechat.inc.php	/^		$postObj = simplexml_load_string($postStr, 'SimpleXMLElement', LIBXML_NOCDATA);$/;"	variable	line:102
+_doEvent	D:\xampp\htdocs\wechat\wechat.inc.php	/^	private function _doEvent($postObj){ \/\/事件处理$/;"	function	line:126
+_doSubscribe	D:\xampp\htdocs\wechat\wechat.inc.php	/^	private function _doSubscribe($postObj){$/;"	function	line:138
+tpltext	D:\xampp\htdocs\wechat\wechat.inc.php	/^		$tpltext = '<xml>$/;"	variable	line:139
+str	D:\xampp\htdocs\wechat\wechat.inc.php	/^		$str = sprintf($tpltext,$postObj->FromUserName,$postObj->ToUserName,time(),'欢迎您关注430世界！');$/;"	variable	line:146
+_doUnsubscribe	D:\xampp\htdocs\wechat\wechat.inc.php	/^	private function _doUnsubscribe($postObj){$/;"	function	line:152
+_doText	D:\xampp\htdocs\wechat\wechat.inc.php	/^	private function _doText($postObj){$/;"	function	line:156
+fromUsername	D:\xampp\htdocs\wechat\wechat.inc.php	/^		$fromUsername = $postObj->FromUserName;$/;"	variable	line:157
+toUsername	D:\xampp\htdocs\wechat\wechat.inc.php	/^		$toUsername = $postObj->ToUserName;$/;"	variable	line:158
+keyword	D:\xampp\htdocs\wechat\wechat.inc.php	/^		$keyword = trim($postObj->Content);$/;"	variable	line:159
+time	D:\xampp\htdocs\wechat\wechat.inc.php	/^		$time = time();$/;"	variable	line:160
+textTpl	D:\xampp\htdocs\wechat\wechat.inc.php	/^		$textTpl = "<xml>$/;"	variable	line:161
+data	D:\xampp\htdocs\wechat\wechat.inc.php	/^			$data = "chat=".$keyword;$/;"	variable	line:171
+contentStr	D:\xampp\htdocs\wechat\wechat.inc.php	/^			$contentStr = $this->_request("http:\/\/www.xiaodoubi.com\/bot\/chat.php",false,"post",$data);$/;"	variable	line:172
+contentStr	D:\xampp\htdocs\wechat\wechat.inc.php	/^				$contentStr = "Welcome to wechat  PHP 39 world!";$/;"	variable	line:174
+contentStr	D:\xampp\htdocs\wechat\wechat.inc.php	/^				$contentStr = "最流行的网页编程语言！";$/;"	variable	line:176
+contentStr	D:\xampp\htdocs\wechat\wechat.inc.php	/^				$contentStr = "较流行的网页编程语言！";$/;"	variable	line:178
+msgType	D:\xampp\htdocs\wechat\wechat.inc.php	/^			$msgType = "text";$/;"	variable	line:179
+resultStr	D:\xampp\htdocs\wechat\wechat.inc.php	/^			$resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);$/;"	variable	line:180
+_doImage	D:\xampp\htdocs\wechat\wechat.inc.php	/^	private function _doImage($postObj){$/;"	function	line:186
+tpltext	D:\xampp\htdocs\wechat\wechat.inc.php	/^		$tpltext='<xml>$/;"	variable	line:187
+str	D:\xampp\htdocs\wechat\wechat.inc.php	/^		$str = sprintf($tpltext,$postObj->FromUserName,$postObj->ToUserName,time(),'您发送的图片在'.$postObj->PicUrl."。");$/;"	variable	line:194
+checkSignature	D:\xampp\htdocs\wechat\wechat.inc.php	/^	private function checkSignature()$/;"	function	line:198
+signature	D:\xampp\htdocs\wechat\wechat.inc.php	/^        $signature = $_GET["signature"];$/;"	variable	line:200
+timestamp	D:\xampp\htdocs\wechat\wechat.inc.php	/^        $timestamp = $_GET["timestamp"];$/;"	variable	line:201
+nonce	D:\xampp\htdocs\wechat\wechat.inc.php	/^        $nonce = $_GET["nonce"];$/;"	variable	line:202
+token	D:\xampp\htdocs\wechat\wechat.inc.php	/^		$token = TOKEN;$/;"	variable	line:203
+tmpArr	D:\xampp\htdocs\wechat\wechat.inc.php	/^		$tmpArr = array($token, $timestamp, $nonce);$/;"	variable	line:204
+tmpStr	D:\xampp\htdocs\wechat\wechat.inc.php	/^		$tmpStr = implode( $tmpArr );$/;"	variable	line:206
+tmpStr	D:\xampp\htdocs\wechat\wechat.inc.php	/^		$tmpStr = sha1( $tmpStr );$/;"	variable	line:207
+tmpStr	D:\xampp\htdocs\wechat\wechat.inc.php	/^		if( $tmpStr == $signature ){$/;"	variable	line:209
